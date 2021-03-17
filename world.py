@@ -3,8 +3,8 @@
 # PHY 2200
 
 from vpython import *
-from random import randint, uniform
 from interface import Interface
+from random import randint, uniform
 
 class World:
 
@@ -12,7 +12,7 @@ class World:
         #terrain and background
         self.scene = canvas(title = "Tank Wars", width = 1600, height = 900, range = 20, background = vec(.1,.1,.1))
         self.floor = box(pos = vec(0, -15, 0), size = vec(60, 2.5, .5), color = vec(.5,.5,.5))
-        self.wall = box(pos = vec(0,-6.25,0), size = vec(1, 15, .5), color = vec(.5,.5,.5))
+        self.wall = box(pos = vec(0,-8.25,0), size = vec(1, 12, .5), color = vec(.5,.5,.5))
         self.sun = sphere(pos = vec(0,-15,-.5), size = vec(50,50,.01), color = vec(.9,.6,.2))
         self.UI = Interface()
 
